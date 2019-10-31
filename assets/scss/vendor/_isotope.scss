@@ -1,0 +1,94 @@
+// Isotope masonry and filtering styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// button 
+.filter-buttons {
+
+  button {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 $column_margin;
+    background: transparent;
+    border: none;
+    color: #222;
+    @include font-size(1.6);
+    text-transform: none;
+    line-height: $font_line_height_forms;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border-color $transistion_duration;
+    border-radius: 0;
+
+    & + button {
+      margin-left: $column_margin;
+    }
+
+    &:hover {
+      // background-color: #ddd; 
+      // color: #222;
+      border-color: #ccc;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    // &:active,
+    // &.is-checked {
+    //   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+    //   background-color: #eee;
+    // }
+
+    &.is-checked {
+      // color: #222;
+      border-color: #222;
+    }
+  }
+}
+
+
+
+// button-group
+.button-group {
+  margin-bottom: $column_margin;
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+
+
+// .element-item 
+.element-item {
+// position: relative; 
+// float: left; 
+// width: 100px; 
+// height: 100px; 
+// margin: 0; 
+// padding: 0; 
+// background: #888; 
+  color: #262524;
+  margin-bottom: 40px;
+}
+
+.element-block {
+  background-color: tan;
+  padding: 20px;
+}
+
+.grid {
+  transition: height $transistion_duration; // smooth height transition for filtering
+  animation-delay: $transistion_duration; // smooth height transition for filtering
+
+  &:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+  }
+}
+

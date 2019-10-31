@@ -1,0 +1,54 @@
+// Heading styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	clear: both;
+	font-family: $font_headings;
+	font-weight: $font_weight_headings;
+	line-height: $font_line_height_headings;
+	margin-bottom: 1.5rem;
+	word-wrap: break-word; // keeps long titles form overflowing content area
+
+	a {
+		text-decoration: none;
+	}
+
+	// .entry-header & {
+	// 	margin-bottom: 0.5rem;
+	// }
+}
+
+// Heading font sizes, calculated based on default font size
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+h1, h2 { 
+	@include font-size(3.0);
+
+	@include tablet {
+		@include font-size(3.6);
+	}
+}
+
+h3 { @include font-size(2.4); }
+h4 { @include font-size(2.0); }
+h5 { @include font-size(1.8); }
+h6 { @include font-size(1.6); }
+
+
+.hero h1 { 
+	    color: #fff;
+	@include font-size(4.0);
+
+	@include tablet {
+		@include font-size(4.8);
+	}
+
+	// .hero & {
+	// 	margin-bottom: 0;
+	// }
+
+	// .home & {
+	// 	@include font-size(6.0);
+	// 	margin-bottom: 1.5rem;
+	// }
+}

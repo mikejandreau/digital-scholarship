@@ -1,0 +1,190 @@
+// FONT FAMILIES
+// Font files are located in assets/fonts, currently choose from the fonst listed below. 
+// Only un-comment what you need to keep your CSS light
+
+// Montserrat (sans-serif)
+// Roboto (sans-serif)
+// Roboto Slab (serif)
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+// Sans-serif
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// @font-face {
+//     font-family: 'montserratblack';
+//     src: url('../fonts/montserrat-black.woff2') format('woff2'),
+//          url('../fonts/montserrat-black.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratextrabold';
+//     src: url('../fonts/montserrat-extrabold.woff2') format('woff2'),
+//          url('../fonts/montserrat-extrabold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratbold';
+//     src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+//          url('../fonts/montserrat-bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratsemibold';
+//     src: url('../fonts/montserrat-semibold.woff2') format('woff2'),
+//          url('../fonts/montserrat-semibold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratmedium';
+//     src: url('../fonts/montserrat-medium.woff2') format('woff2'),
+//          url('../fonts/montserrat-medium.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratregular';
+//     src: url('../fonts/montserrat-regular.woff2') format('woff2'),
+//          url('../fonts/montserrat-regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light.woff2') format('woff2'),
+         url('../fonts/montserrat-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'montserratextralight';
+//     src: url('../fonts/montserrat-extralight.woff2') format('woff2'),
+//          url('../fonts/montserrat-extralight.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratthin';
+//     src: url('../fonts/montserrat-thin.woff2') format('woff2'),
+//          url('../fonts/montserrat-thin.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+
+
+
+
+
+
+// @font-face {
+//     font-family: 'robotoblack';
+//     src: url('../fonts/roboto-black.woff2') format('woff2'),
+//          url('../fonts/roboto-black.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotoblack_italic';
+//     src: url('../fonts/roboto-blackitalic.woff2') format('woff2'),
+//          url('../fonts/roboto-blackitalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotobold';
+//     src: url('../fonts/roboto-bold.woff2') format('woff2'),
+//          url('../fonts/roboto-bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotobold_italic';
+//     src: url('../fonts/roboto-bolditalic.woff2') format('woff2'),
+//          url('../fonts/roboto-bolditalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotoregular';
+//     src: url('../fonts/roboto-regular.woff2') format('woff2'),
+//          url('../fonts/roboto-regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotoitalic';
+//     src: url('../fonts/roboto-italic.woff2') format('woff2'),
+//          url('../fonts/roboto-italic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotolight';
+//     src: url('../fonts/roboto-light.woff2') format('woff2'),
+//          url('../fonts/roboto-light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotolight_italic';
+//     src: url('../fonts/roboto-lightitalic.woff2') format('woff2'),
+//          url('../fonts/roboto-lightitalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// Serif
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// @font-face {
+//     font-family: 'roboto_slabbold';
+//     src: url('../fonts/robotoslab-bold.woff2') format('woff2'),
+//          url('../fonts/robotoslab-bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'roboto_slabregular';
+//     src: url('../fonts/robotoslab-regular.woff2') format('woff2'),
+//          url('../fonts/robotoslab-regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'roboto_slablight';
+//     src: url('../fonts/robotoslab-light.woff2') format('woff2'),
+//          url('../fonts/robotoslab-light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'roboto_slabthin';
+//     src: url('../fonts/robotoslab-thin.woff2') format('woff2'),
+//          url('../fonts/robotoslab-thin.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }

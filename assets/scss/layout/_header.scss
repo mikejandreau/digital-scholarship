@@ -1,0 +1,156 @@
+// Header styles
+// full header with branding, title, description, and nav
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.site-header { 
+	// background-color: $color_background_header;
+	background-color: transparent;
+	position: relative;
+	top:0;
+	width: 100%;
+	z-index: 10;
+
+	// border-bottom: 1px solid darken($color_background_header, 5%);
+	@include absoluteHeader; // uncomment to set absolute header
+
+	// @include dropShadow;
+
+	// @include fixedHeader; // uncomment to set fixed header, and also uncomment related fixedHeader mixins below
+
+	// @include laptop {
+		// padding: ($column_margin / 2) 0;
+	// }
+}
+
+
+// // In the event you have nav below hero, 
+// // uncomment .fixed-nav style below and in sticky-nav.js
+// body.fixed-nav #masthead {
+//   position: fixed;
+// }
+
+
+.site-navbar {
+	@extend .container; // keeps navbar content lined up with body content
+	
+	&.has-logo {
+		line-height: 0; // eliminates gap below img if logo is present
+	}
+}
+
+// site title and description
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.site-branding { 
+	display: inline-block;
+
+	// Make sure logo link wraps around logo image
+	a {
+		display: inline-block;
+		// color: $color_mdgray;
+		color: #fff;
+
+		&:hover,
+		&:visited {
+			color: #fff;
+		}
+	}
+
+	img {
+		display: block;
+		width: auto;
+		vertical-align: middle;
+		height: $header_height;
+		padding: ($header_height / 6) 0; // add some space above and below logo image
+		margin: 0;
+		// filter: brightness(0) invert(1); // make image white
+	}
+}
+
+// site title only
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.site-title { 
+	// background-color: rgba(0,255,0,0.5);
+	// margin: 0 0 0 ($column_margin / 1.5);
+	font-family: $font_headings;
+	line-height: $header_height;
+	@include font-size(2.0);
+	letter-spacing: -.1rem;
+
+	a {
+		// color: $color_text_main;
+		text-decoration: none;
+	}
+}
+
+// site description only (optional)
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// .site-description { 
+// 	background-color: rgba(0,0,255,0.5);
+// 	margin: 0;
+// }
+
+
+
+// WP admin bar bix
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.site {
+	@include wpAdminBodyAdjustment; // Adjust body for admin bar
+	// @include fixedHeaderBodyAdjustment; // uncomment to adjust body for fixed header
+}
+
+// Offset internal anchor links to keep them on screen
+//––––––––––––––––––––––––––––––––––––––––––––––––––,
+// #content:before, // maybe remove this later
+.scroll-anchor:before { 
+	display: block; 
+	content: ""; 
+	visibility: hidden; 
+	@include anchor_offset; // offset internal anchor links, comment out to use fixed header mixin below
+	// @include fixedHeaderanchor_offset; // uncomment to offset internal anchor links with fixed header
+}
+
+
+// Pad the top of the content area below the header/hero
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.content-area,
+.widget-area {
+	padding-top: $column_margin;
+
+	@include tablet {
+		padding-top: $column_margin * 2;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-search-box {
+	background: #efefef;
+	padding: 20px 20px 5px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+
+.faq-block {
+	border-bottom: 1px solid #efefef;
+	margin-top: 30px;
+	padding-bottom: 30px;
+
+	&:last-of-type {
+		border: none;
+	}
+
+	p {
+		margin-bottom: 1.0em;
+	}
+}
+
