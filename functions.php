@@ -119,6 +119,9 @@ add_action( 'widgets_init', 'digitalscholarship_widgets_init' );
 function digitalscholarship_scripts() {
 
 	// minified stylesheet
+	wp_enqueue_style( 'digitalscholarship-fontawesome', get_template_directory_uri() . '/assets/fonts/fontawesome/all.min.css', array(), time() ); 
+
+	// minified stylesheet
 	wp_enqueue_style( 'digitalscholarship-min-style', get_template_directory_uri() . '/assets/css/main.css', array(), time() ); 
 	
 	// theme styles

@@ -50,8 +50,16 @@
 						</div>
 
 					<?php elseif ( is_front_page() ) : // if front page is set to show static page, get front-page.php markup ?>
+						<div class="site-content">
+							<div id="primary" class="content-area">
+								<main id="main" class="site-main">
+									<?php include digitalscholarship_template_path(); ?>
+								</main>
+							</div>
+							<?php get_sidebar( digitalscholarship_template_base() ); ?>
+						</div>
 						<?php // get_template_part('template-parts/strapline'); // strapline section ?>
-						<?php include digitalscholarship_template_path(); ?>
+						<?php // include digitalscholarship_template_path(); ?>
 
 					<?php elseif ( is_page_template( 'full-width.php' ) ) : ?>
 						<?php include digitalscholarship_template_path(); ?>

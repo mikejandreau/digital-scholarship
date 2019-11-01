@@ -175,7 +175,8 @@ $sideNavBgColor: $color_white;
 			&:hover > a,
 			&.focus > a {
 				// background-color: darken($color_background_header, 5%);
-				color: darken($color_text_nav, 5%);
+				// color: darken($color_text_nav, 5%);
+				color: darken($color_white, 15%);
 			}
 		}
 
@@ -218,6 +219,10 @@ $sideNavBgColor: $color_white;
 
 		&:visited {
 			color: $color_text_nav;
+
+			@include laptop {
+				color: $color_white;
+			}
 		}
 		
 		// padding: 0 ($column_margin / 1.5);
@@ -228,6 +233,7 @@ $sideNavBgColor: $color_white;
 			line-height: $header_height;
 			// padding: 0;
 			padding: 0 ($column_margin / 2);
+			color: $color_white;
 		}
 	}
 	
@@ -236,6 +242,10 @@ $sideNavBgColor: $color_white;
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 		color: darken($color_text_nav, 15%);
+
+		@include laptop {
+			color: darken($color_white, 15%);
+		}
 	}
 }
 

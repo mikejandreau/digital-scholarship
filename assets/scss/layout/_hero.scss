@@ -5,8 +5,8 @@
     background-color: $color_background_hero;
     // background: linear-gradient($color_hero_overlay, $color_hero_overlay), url('./assets/img/hero.jpg'); // use this path if you're enqueing styles from root folder
     background: linear-gradient($color_hero_overlay, $color_hero_overlay), url('../img/hero.jpg'); // use this path if you're enqueing styles from assets/css
-    min-height: 22rem;
-    height: 20vh;
+    min-height: 25rem;
+    height: 25vh;
 
     border: none;    
     // border-bottom: 1px solid darken($color_background_header, 5%);
@@ -37,7 +37,7 @@
 
 .heading {
     position:absolute;
-    top:50%;
+    top:55%;
     width:100%;
     transform: translate(0,-50%); // vertically center hero text
 

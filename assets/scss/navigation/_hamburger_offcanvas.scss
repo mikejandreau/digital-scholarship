@@ -4,7 +4,10 @@ $menu_toggle_height: $header_height;       // height of button area
 $menu_toggle_bar: 2px;                    // thickness of button bars
 $menu_toggle_pad: 0;   // left/right padding between button area and bars.
 $menu_toggle_bar_space: 7px;              // spacing between button bars
-$menu_toggle_color: #404040;
+$menu_toggle_color: #fff;           // spacing between button bars
+$menu_dismiss_color: #404040;
+
+
 
 // menu-toggle
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -157,7 +160,7 @@ button.menu-dismiss {
     left: $menu_toggle_pad;
     right: $menu_toggle_pad;
     height: $menu_toggle_bar;
-    background-color: $menu_toggle_color;
+    background-color: $menu_dismiss_color;
     transition-duration: $transistion_duration;
     transition-delay: $transistion_duration;
 
@@ -168,7 +171,7 @@ button.menu-dismiss {
       left: 0;
       width: 100%;
       height: $menu_toggle_bar;
-      background-color: $menu_toggle_color;
+      background-color: $menu_dismiss_color;
       content: "";
       transition-duration: $transistion_duration;
       transition-delay: $transistion_duration;

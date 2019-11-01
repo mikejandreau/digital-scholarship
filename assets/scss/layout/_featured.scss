@@ -81,6 +81,45 @@
 
 
 
+.tools-services-item {
+  text-align: center;
+
+}
+
+.tools-services-item a {
+  opacity: .7;
+  display: block;
+  /*width: 60%;*/
+  /*border: 1px solid red;*/
+  font-size: 5em;
+  margin: 0 auto;
+}
+
+.tools-services-item:hover a {
+  opacity: 1;
+  color: #333;
+}
+
+
+
+/*color inversion styles*/
+.tools-services-item {
+  /*background: blue;*/
+  /*color: #eee;*/
+  /*border-radius: 4px;*/
+  padding: 30px 0 5px;
+  margin-bottom: 30px;
+}
+.tools-services-item a {
+  display: block;
+  /*border: 1px solid orange;*/
+  padding: 0 30px;
+  margin-bottom: 15px;
+} 
+
+
+
+
 // .about-img {
 //   @include aspectRatio(4,3);
 //   background-color: $hero-bg-color;
